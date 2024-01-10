@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="My Music App" />
+    <meta name="theme-color" content="#333" />
+    <meta name="description" content="My music app" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <title>My Music App</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="images/logo.png" alt="Music Logo" class="logo" />
+      <p class="app-title">My Music App</p>
+    </header>
+    <main>
+      <div class="container">
+        <h3>Add new song</h3>
+        <form id="songForm">
+          <div class="row">
+            <div class="col-25">
+              <label for="songTitle">Title</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="songTitle" name="songTitle" />
+              <p id="errSongTitle" class="error-msg"></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="songArtist">Artist</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="songArtist" name="songArtist" />
+              <p id="errSongArtist" class="error-msg"></p>
+            </div>
+          </div>
+          <div class="row">
+            <button type="submit">Add</button>
+          </div>
+        </form>
+      </div>
+      <div id="songList" class="container">
+        <h3>List of songs</h3>
+      </div>
+    </main>
+    <script src="/js/scripts.js"></script>
+    <script src="/js/app.js" type="module"></script>
+  </body>
+</html>

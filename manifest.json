@@ -1,0 +1,25 @@
+{
+    "short_name": "My Music App",
+    "name": "My Music App",
+    "description": "This is a music app",
+    "start_url": "/",
+    "id": "/",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#333",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "/images/logo.png",
+            "sizes": "192x192", 
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/images/logo-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+}
